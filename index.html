@@ -3,16 +3,26 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World! Site Title</title>
+    <title>Web UI for @BrowserMessageSenderBot</title>
   </head>
   <body>
-    <h1>Hello World!</h1>
+    <h1>Web UI for <a target="_blank" href="https://t.me/BrowserMessageSenderBot">@BrowserMessageSenderBot</a></h1>
+	
 	
 	<form action="https://telegram-sender.workers-platform.workers.dev/sendMessage" method="post" enctype="multipart/form-data">
-	  <p><input type="text" name="text" value="text default">
-	  <p><input type="text" name="token">
-	  <p><input type="file" name="image">
-	  <p><button type="submit">Submit</button>
+	  <p>
+	    <label for="text">Text:</label>
+		<textarea id="text" name="text" cols="40" rows="5"></textarea>
+	  </p>
+	  <p>
+	    <label for="token">Token:</label>
+		<input id="token" type="text" name="token">
+	  </p>
+	  <p>
+	    <label for="file">Image:</label>
+		<input id="file" type="file" name="image">
+	  </p>
+	  <p><button type="submit">Submit</button></p>
 	</form>
 
   </body>
