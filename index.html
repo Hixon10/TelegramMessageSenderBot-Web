@@ -7,5 +7,13 @@
   </head>
   <body>
     <h1>Hello World!</h1>
+	
+	<form action="https://telegram-sender.workers-platform.workers.dev/sendMessage" method="post" enctype="multipart/form-data">
+	  <p><input type="text" name="text" value="text default">
+	  <p><input type="text" name="token">
+	  <p><input type="file" name="image">
+	  <p><button type="submit">Submit</button>
+	</form>
+
   </body>
 </html>
